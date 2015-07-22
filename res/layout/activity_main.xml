@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:tag="sensor_data"
+    tools:context="com.example.emo.MainActivity" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Orientation Sensor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#1100ff" />
+
+    <TextView
+        android:id="@+id/DescriptionY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text=" 	Pitch:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/DescriptionX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/DescriptionY"
+        android:layout_alignLeft="@+id/DescriptionY"
+        android:text=" 	Azimuth:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/DescriptionZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DescriptionY"
+        android:layout_below="@+id/DescriptionY"
+        android:text=" 	Roll:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/Infox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/DescriptionX"
+        android:text="Err"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Infoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DescriptionZ"
+        android:layout_alignBottom="@+id/DescriptionZ"
+        android:layout_alignParentRight="true"
+        android:text="Err"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Infoz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DescriptionY"
+        android:layout_alignBottom="@+id/DescriptionY"
+        android:layout_alignParentRight="true"
+        android:text="Err"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
